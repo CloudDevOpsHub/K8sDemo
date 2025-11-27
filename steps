@@ -17,19 +17,20 @@ kubectl get secret db-secret -o yaml
 
 kubectl get secret 
 
+
 3rd Deploy Config Map
-kubectl apply -f configmap.yaml
+kubectl apply -f ConfigMap.yaml
 kubectl describe configmap app-config
 
 4th  Deploy a Demo App
-kubectl apply -f deployment.yaml
+kubectl apply -f defaultnginx.yaml
 kubectl get pods -w   # watch rollout live
 
 5th Deploy Service 
 kubectl apply -f service.yaml
 
 6th Deploy Ingress Ingress for Public Access with URL 
-kubectl apply -f ingress.yaml
+kubectl apply -f GCPingress.yaml
 
 ----------------
 
