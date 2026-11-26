@@ -32,6 +32,9 @@ kubectl apply -f service.yaml
 6th Deploy Ingress Ingress for Public Access with URL 
 kubectl apply -f GCPingress.yaml
 
+
+verify PORD FORword :-   kubectl port-forward svc/demo-service 8080:80
+
 ----------------
 
 kubectl scale deployment demo-app --replicas=5
